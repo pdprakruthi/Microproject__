@@ -86,24 +86,17 @@ Image segmentation enhances image analysis by isolating regions of interest, hel
 Performs image segmentation with 3 clusters.
 
 ### Segmentation for k = 3
-![Segmentation for k=3]
 
 
 - **Process**: Reads and reshapes the image, applies K-means clustering.
 - **Applications**: Segmentation of foreground and background.
 
-### 2. **Basic K-means Clustering (k=2)**
-Similar to the previous method but segments the image into 2 clusters.
-
-### Segmentation for k = 2
-![Segmentation for k=2](https://github.com/thilak-r/image-segmentation-by-clustering/blob/main/for%20k%3D2.png)
 
 - **Applications**: Binary segmentation (e.g., separating sky from ground).
 
 ### 3. **Elbow Method for Optimal k**
 The Elbow Method is used to determine the optimal number of clusters (**k**) for segmentation.
 
-![Elbow Method](https://github.com/thilak-r/image-segmentation-by-clustering/blob/main/elbow_method.png)
 
 - **Process**: 
   1. The sum of squared distances (SSD) between points and their assigned cluster centroid is calculated for different values of **k**.
@@ -118,8 +111,6 @@ The Elbow Method is used to determine the optimal number of clusters (**k**) for
 
 - **Applications**: The Elbow Method helps in choosing the ideal **k** value automatically, which can improve segmentation accuracy.
 
-### Optimal k Value Determination
-![Optimal k Value](https://github.com/thilak-r/image-segmentation-by-clustering/blob/main/optimal%20k%20value.png)
 
 ### 4. **Preprocessing and K-means Clustering with Grayscale Image**
 Preprocesses image with resizing, blurring, and equalization before clustering.
